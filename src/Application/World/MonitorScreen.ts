@@ -184,7 +184,7 @@ export default class MonitorScreen extends EventEmitter {
 
         // Set iframe attributes
         // PROD
-        iframe.src = 'https://os.henryheffernan.com/';
+        iframe.src = 'https://wilberquito.github.io/';
         /**
          * Use dev server is query params are present
          *
@@ -203,8 +203,8 @@ export default class MonitorScreen extends EventEmitter {
         iframe.style.opacity = '1';
         iframe.className = 'jitter';
         iframe.id = 'computer-screen';
-        iframe.frameBorder = '0';
-        iframe.title = 'HeffernanOS';
+        iframe.frameBorder = '1';
+        // iframe.title = 'QuitoOS';
 
         // Add iframe to container
         container.appendChild(iframe);
