@@ -8,7 +8,7 @@ Thanks for taking the time to check this out. If you have any questions of
 comments, feel free to shoot me an email at <samp><a
     href="mailto:toname@gmail.com">typingwil@gmail.com</a></samp>
 or you can DM me on any social media as <samp><a
-    href="">wilberquito</a></samp>
+    href="">wilberquito</a></samp>.
 
 
 
