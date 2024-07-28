@@ -1,6 +1,7 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -20,6 +21,9 @@ module.exports = {
             minify: true,
         }),
         new MiniCSSExtractPlugin(),
+        new webpack.DefinePlugin({
+            'process.env.IFRAME_SRC': JSON.stringify('https://wilberquito.github.io/'),
+        })
     ],
     resolve: {
         alias: {

@@ -184,7 +184,7 @@ export default class MonitorScreen extends EventEmitter {
 
         // Set iframe attributes
         // PROD
-        iframe.src = 'https://wilberquito.github.io/';
+        iframe.src = process.env.IFRAME_SRC || '';
         /**
          * Use dev server is query params are present
          *

@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack');
 const { merge } = require('webpack-merge')
 const commonConfiguration = require('./webpack.common.js')
 const ip = require('ip')
@@ -45,9 +46,14 @@ module.exports = merge(
                 const localIp = ip.address()
                 const domain1 = `http${https}://${localIp}:${port}`
                 const domain2 = `http${https}://localhost:${port}`
-                
+
                 console.log(`Project running at:\n  - ${infoColor(domain1)}\n  - ${infoColor(domain2)}`)
             }
-        }
+        },
+        plugins: [
+            new webpack.DefinePlugin({
+                'process.env.NODE_ENV': JSON.stringify('development'),
+            })
+        ]
     }
 )
